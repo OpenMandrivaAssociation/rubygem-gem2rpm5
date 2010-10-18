@@ -1,11 +1,10 @@
-
 # Generated from gem2rpm5-0.6.1.gem by gem2rpm5 -*- rpm-spec -*-          
 %define	rbname	gem2rpm5
 
 Summary:	Generate rpm specfiles from gems
 Name:		rubygem-%{rbname}
 
-Version:	0.6.1
+Version:	0.6.2
 Release:	%mkrel 1
 Group:		Development/Ruby
 License:	GPLv2+ or Ruby                     
@@ -30,7 +29,7 @@ BuildArch:	noarch
 Documents, RDoc & RI documentation for %{name}.
 
 %prep
-%gem_unpack
+%setup -q
 
 %build
 %gem_build
@@ -55,5 +54,5 @@ rm -rf %{buildroot}
 %doc %{ruby_gemdir}/gems/%{rbname}-%{version}/AUTHORS
 %doc %{ruby_gemdir}/gems/%{rbname}-%{version}/LICENSE
 %doc %{ruby_gemdir}/gems/%{rbname}-%{version}/README
-%doc %{ruby_gemdir}/doc/gem2rpm5-0.6.1
+%doc %{ruby_gemdir}/doc/%{rbname}-%{version}
 
