@@ -5,7 +5,7 @@ Summary:	Generate rpm specfiles from gems
 Name:		rubygem-%{rbname}
 
 Version:	0.6.4
-Release:	1
+Release:	2
 Group:		Development/Ruby
 License:	GPLv2+ or Ruby                     
 URL:		http://wiki.mandriva.com/en/Policies/Ruby
