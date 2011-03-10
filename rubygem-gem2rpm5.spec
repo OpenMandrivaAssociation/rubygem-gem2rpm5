@@ -19,15 +19,6 @@ adapted to first of all follow Mandriva Linux packaging guidelines, using
 rpm5's gem_helper, while following the gem as much as necessary to remain
 compatible without the bloat.
 
-%package	doc
-Summary:	Documentation for %{name}
-Group:		Documentation
-Requires:	%{name} = %{EVRD}
-BuildArch:	noarch
-
-%description	doc
-Documents, RDoc & RI documentation for %{name}.
-
 %prep
 %setup -q
 
@@ -43,6 +34,10 @@ rm -rf %{buildroot}
 
 %files
 %{_bindir}/gem2rpm5
+%doc %{ruby_gemdir}/gems/%{rbname}-%{version}/AUTHORS
+%doc %{ruby_gemdir}/gems/%{rbname}-%{version}/LICENSE
+%doc %{ruby_gemdir}/gems/%{rbname}-%{version}/README
+%doc %{ruby_gemdir}/doc/%{rbname}-%{version}
 %dir %{ruby_gemdir}/gems/%{rbname}-%{version}
 %dir %{ruby_gemdir}/gems/%{rbname}-%{version}/bin
 %{ruby_gemdir}/gems/%{rbname}-%{version}/bin/gem2rpm5
@@ -51,9 +46,3 @@ rm -rf %{buildroot}
 %{ruby_gemdir}/gems/%{rbname}-%{version}/lib/*.template
 %{ruby_gemdir}/gems/%{rbname}-%{version}/lib/*.template
 %{ruby_gemdir}/specifications/%{rbname}-%{version}.gemspec
-
-%files doc
-%doc %{ruby_gemdir}/gems/%{rbname}-%{version}/AUTHORS
-%doc %{ruby_gemdir}/gems/%{rbname}-%{version}/LICENSE
-%doc %{ruby_gemdir}/gems/%{rbname}-%{version}/README
-%doc %{ruby_gemdir}/doc/%{rbname}-%{version}
