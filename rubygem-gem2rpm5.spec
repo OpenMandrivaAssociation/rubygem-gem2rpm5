@@ -4,12 +4,12 @@
 Summary:	Generate rpm specfiles from gems
 Name:		rubygem-%{rbname}
 
-Version:	0.6.2
-Release:	%mkrel 1
+Version:	0.6.3
+Release:	1
 Group:		Development/Ruby
 License:	GPLv2+ or Ruby                     
 URL:		http://wiki.mandriva.com/en/Policies/Ruby
-Source0:	http://gems.rubyforge.org/gems//%{rbname}-%{version}.gem
+Source0:	http://gems.rubyforge.org/gems/%{rbname}-%{version}.gem
 BuildRequires:	rubygems 
 BuildArch:	noarch
 
@@ -48,6 +48,8 @@ rm -rf %{buildroot}
 %{ruby_gemdir}/gems/%{rbname}-%{version}/bin/gem2rpm5
 %dir %{ruby_gemdir}/gems/%{rbname}-%{version}/lib
 %{ruby_gemdir}/gems/%{rbname}-%{version}/lib/*.rb
+%{ruby_gemdir}/gems/%{rbname}-%{version}/lib/*.template
+%{ruby_gemdir}/gems/%{rbname}-%{version}/lib/*.template
 %{ruby_gemdir}/specifications/%{rbname}-%{version}.gemspec
 
 %files doc
@@ -55,4 +57,3 @@ rm -rf %{buildroot}
 %doc %{ruby_gemdir}/gems/%{rbname}-%{version}/LICENSE
 %doc %{ruby_gemdir}/gems/%{rbname}-%{version}/README
 %doc %{ruby_gemdir}/doc/%{rbname}-%{version}
-
