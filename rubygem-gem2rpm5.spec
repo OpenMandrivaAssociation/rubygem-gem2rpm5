@@ -44,5 +44,4 @@ rm -rf %{buildroot}
 %dir %{ruby_gemdir}/gems/%{rbname}-%{version}/lib
 %{ruby_gemdir}/gems/%{rbname}-%{version}/lib/*.rb
 %{ruby_gemdir}/gems/%{rbname}-%{version}/lib/*.template
-%{ruby_gemdir}/gems/%{rbname}-%{version}/lib/*.template
 %{ruby_gemdir}/specifications/%{rbname}-%{version}.gemspec
