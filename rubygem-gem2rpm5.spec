@@ -26,11 +26,7 @@ compatible without the bloat.
 %gem_build
 
 %install
-rm -rf %{buildroot}
 %gem_install
-
-%clean
-rm -rf %{buildroot}
 
 %files
 %{_bindir}/gem2rpm5
