@@ -4,8 +4,8 @@
 Summary:	Generate rpm specfiles from gems
 Name:		rubygem-%{rbname}
 
-Version:	0.6.4
-Release:	2
+Version:	0.6.5
+Release:	1
 Group:		Development/Ruby
 License:	GPLv2+ or Ruby                     
 URL:		http://wiki.mandriva.com/en/Policies/Ruby
@@ -39,5 +39,4 @@ compatible without the bloat.
 %{ruby_gemdir}/gems/%{rbname}-%{version}/bin/gem2rpm5
 %dir %{ruby_gemdir}/gems/%{rbname}-%{version}/lib
 %{ruby_gemdir}/gems/%{rbname}-%{version}/lib/*.rb
-%{ruby_gemdir}/gems/%{rbname}-%{version}/lib/*.template
 %{ruby_gemdir}/specifications/%{rbname}-%{version}.gemspec
