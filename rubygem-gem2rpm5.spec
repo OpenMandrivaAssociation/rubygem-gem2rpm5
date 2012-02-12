@@ -1,13 +1,13 @@
-# Generated from gem2rpm5-0.6.1.gem by gem2rpm5 -*- rpm-spec -*-          
+# Generated from gem2rpm5-0.6.1.gem by gem2rpm5 -*- rpm-spec -*-
 %define	rbname	gem2rpm5
 
 Summary:	Generate rpm specfiles from gems
 Name:		rubygem-%{rbname}
 
-Version:	0.6.5
+Version:	0.6.6
 Release:	1
 Group:		Development/Ruby
-License:	GPLv2+ or Ruby                     
+License:	GPLv2+ or Ruby
 URL:		http://wiki.mandriva.com/en/Policies/Ruby
 Source0:	http://gems.rubyforge.org/gems/%{rbname}-%{version}.gem
 BuildRequires:	rubygems 
