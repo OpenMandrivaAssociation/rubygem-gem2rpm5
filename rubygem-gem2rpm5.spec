@@ -4,7 +4,7 @@
 Summary:	Generate rpm specfiles from gems
 Name:		rubygem-%{rbname}
 
-Version:	0.6.6
+Version:	0.6.7
 Release:	1
 Group:		Development/Ruby
 License:	GPLv2+ or Ruby
