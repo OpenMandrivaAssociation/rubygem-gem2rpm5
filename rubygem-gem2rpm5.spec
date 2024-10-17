@@ -8,7 +8,7 @@ Version:	0.6.7
 Release:	2
 Group:		Development/Ruby
 License:	GPLv2+ or Ruby
-URL:		http://wiki.mandriva.com/en/Policies/Ruby
+URL:		https://wiki.mandriva.com/en/Policies/Ruby
 Source0:	http://gems.rubyforge.org/gems/%{rbname}-%{version}.gem
 BuildRequires:	rubygems 
 BuildRequires:	locales-en
